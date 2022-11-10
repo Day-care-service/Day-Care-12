@@ -1,0 +1,745 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!-- Mirrored from websitesfordaycares.com/child-care-website-templates/creative-kids/careers.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 10:41:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>Websites for Daycares Creative Kids Theme | Careers at Creative Kids Theme</title>
+
+<!--[if lt IE 9]>
+
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+
+<![endif]-->
+
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+
+<!-- Left MENU -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.css" />
+
+<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+
+var $menu = $('nav#menu'), $html = $('html, body');
+
+$menu.mmenu({
+
+	dragOpen : false
+
+});
+
+
+
+var $anchor = false;
+
+$menu.find('li > a').on('click', function(e) {
+
+	$anchor = $(this);
+
+});
+
+var api = $menu.data('mmenu');
+
+api.bind('closed', function() {
+
+	if($anchor) {
+
+		var href = $anchor.attr('href');
+
+		$anchor = false;
+
+		//	if the clicked link is linked to an anchor, scroll the page to that anchor
+
+		if(href.slice(0, 1) == '#') {
+
+			$html.animate({
+
+				scrollTop : $(href).offset().top
+
+			});
+
+		}
+
+	}
+
+});
+
+});
+
+</script>
+
+<!-- Left MENU -->
+
+
+
+<script type="text/javascript" src="js/active.js"></script>
+
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+
+
+
+<!-- Header fix jquery--> 
+
+<script type="text/javascript">
+
+$(window).scroll(function(){
+
+  var sticky = $('.sticky'),
+
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 85) sticky.addClass('fixed');
+
+  else sticky.removeClass('fixed');
+
+});
+
+
+
+</script> 
+
+<!-- Header fix jquery--> 
+
+
+
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+	$("#inquiryform1").validate({
+
+		rules: {
+
+		First_Name:'required',
+
+		Email:'required',
+
+		captcha_input:'required',
+
+		Email: {required:true,
+
+ 		email:true},
+
+		},
+
+	messages: {
+
+		Email: "required"
+
+		},
+
+		errorPlacement: function(error, element) {},
+
+		});
+
+	});
+
+</script>
+
+<script>
+
+function mailsub_validate(){ 
+
+	if(!validate_text(document.emailsubcri.fname,1,"Please enter your name"))
+
+		return false;
+
+	if(!validate_email(document.emailsubcri.mail,1,"Please enter your email address"))
+
+		return false;	
+
+}
+
+function validate_career(){
+
+	if(!validate_text(document.career_form.fname,1,"Please enter your name"))
+
+	return false;
+
+	if(!validate_text(document.career_form.phone,1,"Please enter your phone number"))
+
+	return false;
+
+	if(!validate_email(document.career_form.email,1,"Please enter your email address"))
+
+	return false;
+
+	if(!validate_text(document.career_form.address,1,"Please enter your address"))
+
+	return false;
+
+	if(document.career_form.age.checked == false){
+
+		alert("Please tick on : At least 18 years of age");
+
+		return false;
+
+	}
+
+	if(!validate_text(document.career_form.captcha,1,"Please enter captcha code"))
+
+	return false;
+
+	return true;
+
+}
+
+function validateFileExtension(fld) {
+
+	var fileName = fld.value;
+
+    var fileExtension = fileName.substr(fileName.length - 4);
+
+    console.log(fileExtension)
+
+    if (fileExtension == ".doc" || fileExtension == "docx" || fileExtension == ".pdf" || fileExtension == ".txt" ) {
+
+      return true;  
+
+    } else{
+
+    	 alert("Please upload the file in .doc/.docx/.pdf/.txt format!");
+
+    	 fld.value=null;
+
+		 fld.focus();
+
+         return false;
+
+    }
+
+   //alert(fld);
+
+}
+
+function MM_preloadImages() { //v3.0
+
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+
+}
+
+function MM_swapImgRestore() { //v3.0
+
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+
+}
+
+function MM_findObj(n, d) { //v4.01
+
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+
+}
+
+function MM_swapImage() { //v3.0
+
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+
+}
+
+</script>
+
+<style>
+
+.error {
+
+	border:1px solid #F00 !important;
+
+}
+
+</style>
+
+
+
+	
+
+</head>
+
+
+
+<body class="sticky"><!-- #BeginLibraryItem "/Library/header.lbi" --><nav id="menu">
+  <ul>
+      <li><a href="index-2.html">Home</a></li>
+      <li><a href="about-us.html">About</a>
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="staff.html">Our Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </li>
+      <li><a href="#"> Program</a>
+        <ul>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="curriculum.html">Our Curriculum</a></li>
+        </ul>
+      </li>
+      <li><a href="enrollment.html">Enrollment</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="#">For Parents</a>
+        <ul>
+      <li><a href="news.html">News</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="headerPnl"><a href="#menu"><img src="images/menu.png" class="menuIcon" alt="" /></a>
+  <div class="mainDiv"> <a href="index-2.html"><img src="images/logo.png" class="hdrLogo" alt=""></a>
+    <ul id="navigation">
+      <li><a href="index-2.html">Home</a></li>
+      <li><a href="about-us.html">About</a>
+        <ul class="dropDownMenu">
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="staff.html">Our Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </li>
+      <li><a href="#"> Program</a>
+        <ul class="dropDownMenu">
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="curriculum.html">Our Curriculum</a></li>
+        </ul>
+      </li>
+      <li><a href="enrollment.html">Enrollment</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+	  <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="#">For Parents</a>
+        <ul class="dropDownMenu">
+        	<li><a href="news.html">News</a></li>
+            <li><a href="#">Resources</a></li>
+      </ul></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="sketchLine"></div><!-- #EndLibraryItem --><div class="bannerNew innerBanner">
+
+  <div class="bannerNewSlider">
+
+ 	 <img src="images/bnrInr_5.jpg" alt="">
+
+     </div>
+
+  <div class="bannerNewRight"></div>
+
+  <div class="bannerNewContainer">
+
+  	<div class="mainDiv">
+
+        <a href="index-2.html"><img src="images/logo.png" class="logoNew" alt=""></a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="sketchLine"></div>
+
+<div class="sketchLine"></div>
+
+<div class="middilePnl">
+
+  <div class="mainDiv">
+
+	  
+
+	 <div class="bodyContent">
+
+  <h1>Careers</h1>
+
+  <p><img src="images/v57.png" width="300" height="400" alt="" />A great team is what makes our center and our family care network so great. We provide the innovative and creative benefits to attract, hire and retain top teachers and support staff. We offer competitive pay for qualified candidates. Our program is committed to providing high quality care to the children and families that we serve. Our staff is dedicated to a collaborative approach and to continued professional growth individually and as a group.</p>
+
+  <h2><strong>Job Opportunities</strong></h2>
+
+  <p>We are looking for outstanding people to join our fantastic team! We offer great professional and career growth opportunities. Currently we are inviting applications for:</p>
+
+  <ul>
+
+    <li>Lead Teachers (Full Time and Part Time)</li>
+
+    <li>Assistant Teachers (Full Time and Part Time)</li>
+
+    <li>Support Staff (Full Time and Part Time) </li>
+
+  </ul>
+
+  <p>We are looking for teachers that are committed to supporting children's learning, have strong working ethics, are passionate about teaching, enthusiastic, creative, reliable and to be part of a supportive team. </p></div>
+
+    
+
+	  <div class="bodyContent">
+
+   	  <h1>Career Inquiry Form</h1>
+
+		  
+
+		  
+
+   	 <div class="career-form">     
+
+<h2>We'd love for you to be a part of our team. To apply, just complete the form below.</h2>
+
+        <form id="inquiryform1" name="inquiryform1" action="https://websitesfordaycares.com/child-care-website-templates/creative-kids/careers_mail.php" method="post" onsubmit="return validate_contact();" enctype="multipart/form-data" novalidate>
+
+         <p style="color:#F00; font-size: 16px; line-height: 20px;"></p>
+
+          <input name="enter3" value="3" type="hidden">
+
+          <table class="carrersForm" cellspacing="0" cellpadding="0" border="0" width="100%">
+
+            <tbody>
+
+              <tr>
+
+                <td align="right" width="30%" valign="top">First name: <b>*</b></td>
+
+                <td align="left" width="70%" valign="top"><input name="First_Name" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Last name: </td>
+
+                <td align="left" valign="top"><input name="Last_Name" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">E-mail: <b>*</b></td>
+
+                <td align="left" valign="top"><input name="Email" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Phone: </td>
+
+                <td align="left" valign="top"><input name="Phone" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Phone Type:</td>
+
+                <td align="left" valign="top"><select name="Phone_Type">
+
+                    <option value="Home">Home</option>
+
+                    <option value="Office">Office</option>
+
+                    <option value="Mobile">Mobile</option>
+
+                  </select></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Alt. Phone:</td>
+
+                <td align="left" valign="top"><input name="Alt_Phone" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Address Line 1:</td>
+
+                <td align="left" valign="top"><input name="Address_Line_1" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Address Line 2:</td>
+
+                <td align="left" valign="top"><input name="Address_Line_2" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">City:</td>
+
+                <td align="left" valign="top"><input name="City" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">State:</td>
+
+                <td align="left" valign="top"><input name="State" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Zip:</td>
+
+                <td align="left" valign="top"><input name="Zip" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Current Availability:</td>
+
+                <td align="left" valign="top"><label>
+
+                    <input name="Current_Availability" value="Full Time" type="radio">
+
+                    Full Time</label>
+
+                  <br>
+
+                  <label>
+
+                    <input name="Current_Availability" value="School Year Only" type="radio">
+
+                    School Year Only</label>
+
+                  <br>
+
+                  <label>
+
+                    <input name="Current_Availability" value="Substitute" type="radio">
+
+                    Substitute</label>
+
+                  <br>
+
+                  <label>
+
+                    <input name="Current_Availability" value="Part Time" type="radio">
+
+                    Part Time</label>
+
+                  <br>
+
+                  <label>
+
+                    <input name="Current_Availability" value="Summer Only" type="radio">
+
+                    Summer Only</label>
+
+                  <br></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Are you currently working in child care?</td>
+
+                <td align="left" valign="top"><label style="float:left; width:70px">
+
+                    <input name="Are_you_currently_working_in_child_care?" value="Yes" type="radio">
+
+                    Yes</label>
+
+                  <label style="float:left; width:70px">
+
+                    <input name="Are_you_currently_working_in_child_care?" value="No" type="radio">
+
+                    No</label></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">If so, for how long?</td>
+
+                <td align="left" valign="top"><input name="If_so,_for_how_long?" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Current Occupation:</td>
+
+                <td align="left" valign="top"><input name="Current_Occupation" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Highest Level of Education:</td>
+
+                <td align="left" valign="top"><input name="Highest_Level_of_Education" value="" type="text"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Tell Us More About Yourself:</td>
+
+                <td align="left" valign="top"><textarea name="Tell_Us_More_About_Yourself" cols="" rows=""></textarea>
+
+                  <br>
+
+                  <span>(Examples: Any other certificates or qualifications? Industry related skills?)</span></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">Upload Your Resume:</td>
+
+                <td align="left" valign="top"><input name="resume" onchange="return validateFileExtension(this)" type="file"></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top"><img src="captchaImage.png" alt="captcha image" class="capchaImg"></td>
+
+                <td align="left" valign="top"><input id="captcha_input" name="captcha_input" class="form_input_two" style="width:140px; float:left" type="text">
+
+                  <br style="line-height:0; font-size:0; clear:both">
+
+                  <span>Please insert what you see in the image</span></td>
+
+              </tr>
+
+              <tr>
+
+                <td align="right" valign="top">&nbsp;</td>
+
+                <td align="left" valign="top"><input name="" value="Submit" type="submit"></td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </form>
+
+      </div>
+
+
+
+		  
+
+     
+
+    </div>
+
+  </div>
+
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<div class="sketchLine"></div>
+<div class="topFooterWrpr">
+    <div class="mainDiv footerTop">
+        <div class="row">
+            <div class="column locationCol">
+                <h4>Location</h4>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 123 Anywhere Street <br>City, State ZIP 123456 </p>
+            </div>
+            <div class="column openingHours">
+                <h4>Opening Hours</h4>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Monday - Friday <br>6:30AM - 6:30PM </p>
+            </div>
+            <div class="column">
+                <h4>Contact Us</h4>
+                <ul class="footerContactList">
+                    <li><a href="mailto:info@websitesfordaycares.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@websitesfordaycares.com</a></li>
+                    <li><a href="tel:(555) 555-5555"><i class="fa fa-phone" aria-hidden="true"></i> (555) 555-5555</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sketchLine"></div>
+<div class="footerPnl">
+    <div class="footerPnlInr">
+        <div class="mainDiv clearfix">
+            <div class="footerPnl_col stayCon">
+                <h4>Stay Connected</h4>
+                <ul class="ftrMnu">
+                    <li><a href="#"><img src="images/facebookIcon2.png" alt="">Follow us on Facebook</a></li>
+                    <li><a href="#" target="_blank"><img src="images/instragarmIcon2.png" alt="">Follow Instagram Feed</a></li>
+                </ul>
+            </div>
+            <div class="footerPnl_col quick_links">
+                <h4>Quick Links</h4>
+                <ul class="ftrMnu">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="staff.html">Our Staff</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="enrollment.html">Enrollment</a></li>
+                </ul>
+                <ul class="ftrMnu">
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="gallery.html">Photos</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerPnl_col">
+                <h4>The Latest from Facebook</h4>
+                <p>Please like / follow to be kept updated with the latest from Creative Kids School.</p>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWebsitesForDaycares%2F&amp;tabs=timeline&amp;width=350&amp;height=300&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId=141058212630215" width="350" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="cprtPnl">&copy; <script>
+                document.write(new Date().getFullYear())
+                </script> Creative Kids School <a href="http://websitesfordaycares.com/" target="_blank">WebsitesForDaycares.com</a></div>
+        </div>
+    </div>
+</div><!-- #EndLibraryItem --></body>
+
+
+<!-- Mirrored from websitesfordaycares.com/child-care-website-templates/creative-kids/careers.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 10:41:32 GMT -->
+</html>
+

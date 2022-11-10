@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!-- Mirrored from websitesfordaycares.com/child-care-website-templates/creative-kids/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 10:40:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>Websites for Daycares Creative Kids Theme</title>
+
+<!--[if lt IE 9]>
+
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+
+<![endif]-->
+
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+<!-- Left MENU -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.css" />
+
+<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+
+var $menu = $('nav#menu'), $html = $('html, body');
+
+$menu.mmenu({
+
+	dragOpen : false
+
+});
+
+var $anchor = false;
+
+$menu.find('li > a').on('click', function(e) {
+
+	$anchor = $(this);
+
+});
+
+var api = $menu.data('mmenu');
+
+api.bind('closed', function() {
+
+	if($anchor) {
+
+		var href = $anchor.attr('href');
+
+		$anchor = false;
+
+		//	if the clicked link is linked to an anchor, scroll the page to that anchor
+
+		if(href.slice(0, 1) == '#') {
+
+			$html.animate({
+
+				scrollTop : $(href).offset().top
+
+			});
+
+		}
+
+	}
+
+});
+
+});
+
+</script>
+
+<!-- Left MENU -->
+
+<script type="text/javascript" src="js/active.js"></script>
+
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+
+<!-- Home Page Slider -->
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+
+<link href="slider/responsiveslides.css" rel="stylesheet" type="text/css" />
+
+<script src="slider/responsiveslides.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+
+	$(".rslides").responsiveSlides({
+
+	auto: true,             // Boolean: Animate automatically, true or false
+
+	speed: 500,            	// Integer: Speed of the transition, in milliseconds
+
+	timeout: 8000,          // Integer: Time between slide transitions, in milliseconds
+
+	pager: true,            // Boolean: Show pager, true or false
+
+	nav: false,            	// Boolean: Show navigation, true or false
+
+	random: false,          // Boolean: Randomize the order of the slides, true or false
+
+	pause: false,           // Boolean: Pause on hover, true or false
+
+	pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+
+	prevText: "Previous",   // String: Text for the "previous" button
+
+	nextText: "Next",       // String: Text for the "next" button
+
+	maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+
+	navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+
+	manualControls: "",     // Selector: Declare custom pager navigation
+
+	namespace: "rslides",   // String: Change the default namespace used
+
+	before: function(){},   // Function: Before callback
+
+	after: function(){}     // Function: After callback
+
+});
+
+});
+
+</script>
+
+<!-- Home Page Slider -->
+
+<!-- Header fix jquery--> 
+
+<script type="text/javascript">
+
+$(window).scroll(function(){
+
+  var sticky = $('.sticky'),
+
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 85) sticky.addClass('fixed');
+
+  else sticky.removeClass('fixed');
+
+});
+
+</script> 
+
+<!-- Header fix jquery--> 
+
+</head>
+
+<body class="sticky"><!-- #BeginLibraryItem "/Library/header.lbi" --><nav id="menu">
+  <ul>
+      <li><a href="index-2.html">Home</a></li>
+      <li><a href="about-us.html">About</a>
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="staff.html">Our Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </li>
+      <li><a href="#"> Program</a>
+        <ul>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="curriculum.html">Our Curriculum</a></li>
+        </ul>
+      </li>
+      <li><a href="enrollment.html">Enrollment</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="#">For Parents</a>
+        <ul>
+      <li><a href="news.html">News</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="headerPnl"><a href="#menu"><img src="images/menu.png" class="menuIcon" alt="" /></a>
+  <div class="mainDiv"> <a href="index-2.html"><img src="images/logo.png" class="hdrLogo" alt=""></a>
+    <ul id="navigation">
+      <li><a href="index-2.html">Home</a></li>
+      <li><a href="about-us.html">About</a>
+        <ul class="dropDownMenu">
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="staff.html">Our Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </li>
+      <li><a href="#"> Program</a>
+        <ul class="dropDownMenu">
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="curriculum.html">Our Curriculum</a></li>
+        </ul>
+      </li>
+      <li><a href="enrollment.html">Enrollment</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+	  <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="#">For Parents</a>
+        <ul class="dropDownMenu">
+        	<li><a href="news.html">News</a></li>
+            <li><a href="#">Resources</a></li>
+      </ul></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="sketchLine"></div><!-- #EndLibraryItem --><div class="bannerNew">
+
+  <div class="bannerNewSlider">
+
+  	<ul class="rslides" id="slider2">
+
+    	<li><img src="images/slider_1.jpg" alt=""></li>
+
+        <li><img src="images/slider_2.jpg" alt=""></li>
+
+        <li><img src="images/slider_3.jpg" alt=""></li>
+
+        <li><img src="images/slider_4.jpg" alt=""></li>
+
+        <li><img src="images/slider_5.jpg" alt=""></li>
+
+    </ul>
+
+  </div>
+
+  <div class="bannerNewRight">
+
+  		<div class="enqBtn"><a href="contact.html">Inquire</a></div>
+
+        <div class="buttonScdVisit"><a href="contact.html"><span>Schedule a Visit</span></a></div>
+
+  </div>
+
+  <div class="bannerNewContainer">
+
+  	<div class="mainDiv">
+
+        <a href="index-2.html"><img src="images/logo.png" class="logoNew" alt=""></a>
+
+        <h1>We are proud to be <br>a provider of <br> Leading Education <br>and Care</h1>
+
+</div>
+
+  </div>
+
+</div>
+
+<div class="sketchLine"></div>
+
+<div class="contentPart_1">
+
+	
+
+	<div class="mainDiv">
+
+  <section>
+
+    <h2>Welcome to our Family</h2>
+
+    <p>Our full-time childcare center offers the finest facilities available for children ages 6 weeks to school-aged. Our pre-kindergarten program is designed for 4 to 5 year olds to prepare them for their all-important school years ahead. We offer an extensive school-age program for before and after school and planned activities to keep them busy with age appropriate groupings of ages 5 to under 9-year olds. </p>
+
+    <h3>Highlights/Quick Facts:</h3>
+
+    <ul>
+
+      <li>All-Inclusive Tuition</li>
+
+      <li>Safe &amp; Secure</li>
+
+      <li>Developmentally Appropriate Curriculum</li>
+
+      <li>Nutritious Meals and Snacks</li>
+
+      <li>Qualified, Caring, and Experienced Staff</li>
+
+    </ul>
+
+    <p>Please feel free to <a href="contact.html">contact us</a> to setup a time when you can come tour our facility and meet our staff. We look forward to meeting you and your children. </p>
+
+    <p class="lftLine">Providing care for infants, toddlers, preschool and school age in Aiea, Hawaii. Our learning center offers an innovative and affordable concept in childcare and preschool education.<br />
+
+      </p>
+
+    <div class="sendUsMsgBtn"><a href="contact.html">send us a message <span style="font-style: italic;"></span></a></div></section>
+
+  <section>
+
+    <div class="ourCurr">
+
+      <h2>our curriculum</h2><img src="../../../growingpatchacademy.com/images/ourCurrPic.jpg" alt="" />
+
+      <h5>Teachers plan activities and prepare the environment to meet the physical, emotional, social, cognitive, and creative development of each child. </h5><a href="curriculum.html" class="readMorBtn">Read More <span style="font-style: italic;"></span></a></div></section></div>
+
+  
+
+</div>
+
+<div class="contentPart_2">
+
+  <div class="contentPart_2Inr">
+
+    <h3>Competitive and Affordable Tuition</h3>
+
+    <p>We strive to provide your family with the best child care services for the best value. Please visit our Enrollment page for more.</p>
+
+    <a href="enrollment.html" class="readMorBtn">Read More <i class="fa fa-long-arrow-right"></i></a></div>
+
+</div>
+
+<div class="photoGlryPnl">
+
+  <div class="photoGlryPnlCol">
+
+    <div class="photoBox"><img src="images/hm_gallery_pic_1.jpg" alt=""><a href="about-us.html"><span><img src="images/icon_2.png" class="icon" alt="">About Us <b>Click for more</b></span></a></div>
+
+    <div class="photoBox"><img src="images/hm_gallery_pic_5.jpg" alt=""><a href="nutrition.html"><span><img src="images/icon_2.png" class="icon" alt="">Nutrition <b>Click for more</b></span></a></div>
+
+  </div>
+
+  <div class="photoGlryPnlCol">
+
+    <div class="photoBox"><img src="images/hm_gallery_pic_2.jpg" alt=""><a href="curriculum.html"><span><img src="images/icon_2.png" class="icon" alt="">Our Curriculum <b>Click for more</b></span></a></div>
+
+    <div class="photoBox"><img src="images/hm_gallery_pic_6.jpg" alt=""><a href="enrollment.html"><span><img src="images/icon_2.png" class="icon" alt="">Enrollment <b>Click for more</b></span></a></div>
+
+  </div>
+
+  <div class="photoGlryPnlCol">
+
+    <div class="photoBox"><img src="images/hm_gallery_pic_9.jpg" alt=""><a href="programs.html"><span><img src="images/icon_2.png" class="icon" alt="">Classrooms <b>Click for more</b></span></a></div>
+
+  </div>
+
+  <div class="photoGlryPnlCol">
+
+    <div class="photoBox"><img src="images/hm_gallery_pic_10.jpg" alt=""><a href="careers.html"><span><img src="images/icon_2.png" class="icon" alt="">Latest News <b>Click for more</b></span></a></div>
+
+    <div class="photoBox"><img src="images/hm_gallery_pic_8.jpg" alt=""><a href="contact.html"><span><img src="images/icon_2.png" class="icon" alt="">Inquire Now <b>Click for more</b></span></a></div>
+
+  </div>
+
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+
+<div class="sketchLine"></div>
+<div class="topFooterWrpr">
+    <div class="mainDiv footerTop">
+        <div class="row">
+            <div class="column locationCol">
+                <h4>Location</h4>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 123 Anywhere Street <br>City, State ZIP 123456 </p>
+            </div>
+            <div class="column openingHours">
+                <h4>Opening Hours</h4>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Monday - Friday <br>6:30AM - 6:30PM </p>
+            </div>
+            <div class="column">
+                <h4>Contact Us</h4>
+                <ul class="footerContactList">
+                    <li><a href="mailto:info@websitesfordaycares.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@websitesfordaycares.com</a></li>
+                    <li><a href="tel:(555) 555-5555"><i class="fa fa-phone" aria-hidden="true"></i> (555) 555-5555</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sketchLine"></div>
+<div class="footerPnl">
+    <div class="footerPnlInr">
+        
+        <div class="mainDiv clearfix">
+
+            <div class="footerPnl_col stayCon">
+                <h4>Stay Connected</h4>
+                <ul class="ftrMnu">
+                    <li><a href="#"><img src="images/facebookIcon2.png" alt="">Follow us on Facebook</a></li>
+                    <li><a href="#" target="_blank"><img src="images/instragarmIcon2.png" alt="">Follow Instagram Feed</a></li>
+                </ul>
+            </div>
+            <div class="footerPnl_col quick_links">
+                <h4>Quick Links</h4>
+                <ul class="ftrMnu">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="staff.html">Our Staff</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="enrollment.html">Enrollment</a></li>
+                </ul>
+                <ul class="ftrMnu">
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="gallery.html">Photos</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerPnl_col">
+                <h4>The Latest from Facebook</h4>
+                <p>Please like / follow to be kept updated with the latest from Creative Kids School.</p>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWebsitesForDaycares%2F&amp;tabs=timeline&amp;width=350&amp;height=300&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId=141058212630215" width="350" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="cprtPnl">&copy; <script>
+                document.write(new Date().getFullYear())
+                </script> Creative Kids School <a href="http://websitesfordaycares.com/" target="_blank">WebsitesForDaycares.com</a></div>
+        </div>
+    </div>
+</div><!-- #EndLibraryItem --></body>
+
+
+<!-- Mirrored from websitesfordaycares.com/child-care-website-templates/creative-kids/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 10:41:11 GMT -->
+</html>
+

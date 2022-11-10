@@ -1,0 +1,693 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<!-- Mirrored from websitesfordaycares.com/child-care-website-templates/creative-kids/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 10:41:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>Websites for Daycares Creative Kids Theme | Contact Creative Kids Theme</title>
+
+<!--[if lt IE 9]>
+
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+
+<![endif]-->
+
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+<link href="css/fonts.css" rel="stylesheet" type="text/css">
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+
+<!-- Left MENU -->
+
+<script src="js/jquery-2.1.4.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.css" />
+
+<script type="text/javascript" src="dist/js/jquery.mmenu.min.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+
+var $menu = $('nav#menu'), $html = $('html, body');
+
+$menu.mmenu({
+
+	dragOpen : false
+
+});
+
+
+
+var $anchor = false;
+
+$menu.find('li > a').on('click', function(e) {
+
+	$anchor = $(this);
+
+});
+
+var api = $menu.data('mmenu');
+
+api.bind('closed', function() {
+
+	if($anchor) {
+
+		var href = $anchor.attr('href');
+
+		$anchor = false;
+
+		//	if the clicked link is linked to an anchor, scroll the page to that anchor
+
+		if(href.slice(0, 1) == '#') {
+
+			$html.animate({
+
+				scrollTop : $(href).offset().top
+
+			});
+
+		}
+
+	}
+
+});
+
+});
+
+</script>
+
+<!-- Left MENU -->
+
+
+
+<script type="text/javascript" src="js/active.js"></script>
+
+<script type="text/javascript" src="js/scrolltopcontrol.js"></script>
+
+
+
+<!-- Header fix jquery--> 
+
+<script type="text/javascript">
+
+$(window).scroll(function(){
+
+  var sticky = $('.sticky'),
+
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 85) sticky.addClass('fixed');
+
+  else sticky.removeClass('fixed');
+
+});
+
+
+
+</script> 
+
+<!-- Header fix jquery--> 
+
+		
+
+<script src="js/wow.min.js"></script> 
+
+<script>
+
+$(function(){
+
+new WOW().init(); 
+
+});
+
+</script>
+
+<script src="js/jquery.validate.min.js"></script>
+
+<script src="../../../unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
+
+<style>
+
+#inquiryform .error {
+
+	border:1px solid #F00;
+
+}
+
+.errorBox{
+
+    max-width: 350px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    background-color: #ff4800;
+
+    color: #fff;
+
+}
+
+.errorBox .error{
+
+    font-size: 12px;
+
+    display: block;
+
+}
+
+</style>	
+
+</head>
+
+
+
+<body class="sticky"><!-- #BeginLibraryItem "/Library/header.lbi" --><nav id="menu">
+  <ul>
+      <li><a href="index-2.html">Home</a></li>
+      <li><a href="about-us.html">About</a>
+        <ul>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="staff.html">Our Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </li>
+      <li><a href="#"> Program</a>
+        <ul>
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="curriculum.html">Our Curriculum</a></li>
+        </ul>
+      </li>
+      <li><a href="enrollment.html">Enrollment</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="#">For Parents</a>
+        <ul>
+      <li><a href="news.html">News</a></li>
+          <li><a href="#">Resources</a></li>
+        </ul>
+      </li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<div class="headerPnl"><a href="#menu"><img src="images/menu.png" class="menuIcon" alt="" /></a>
+  <div class="mainDiv"> <a href="index-2.html"><img src="images/logo.png" class="hdrLogo" alt=""></a>
+    <ul id="navigation">
+      <li><a href="index-2.html">Home</a></li>
+      <li><a href="about-us.html">About</a>
+        <ul class="dropDownMenu">
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="staff.html">Our Staff</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </li>
+      <li><a href="#"> Program</a>
+        <ul class="dropDownMenu">
+          <li><a href="programs.html">Our Programs</a></li>
+          <li><a href="curriculum.html">Our Curriculum</a></li>
+        </ul>
+      </li>
+      <li><a href="enrollment.html">Enrollment</a></li>
+      <li><a href="nutrition.html">Nutrition</a></li>
+	  <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="#">For Parents</a>
+        <ul class="dropDownMenu">
+        	<li><a href="news.html">News</a></li>
+            <li><a href="#">Resources</a></li>
+      </ul></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</div>
+<div class="sketchLine"></div><!-- #EndLibraryItem --><div class="bannerNew innerBanner">
+
+  <div class="bannerNewSlider">
+
+ 	 <img src="images/bnrInr_9.jpg" alt="">
+
+     </div>
+
+  <div class="bannerNewRight"></div>
+
+  <div class="bannerNewContainer">
+
+  	<div class="mainDiv">
+
+        <a href="index-2.html"><img src="images/logo.png" class="logoNew" alt=""></a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="sketchLine"></div>
+
+<div class="middilePnl">
+
+  <div class="mainDiv">
+
+    <div class="bodyContent">
+
+		
+
+		<div class="contactLft">
+
+  <h1>Contact</h1>
+
+  <p>Thank you for your interest in our child care &amp; preschool. If you have any questions or would like to schedule an on-site visit, please complete the inquiry form or give us a call. We look forward to meeting you and your child.</p>
+
+  <h2>Hours of Operation</h2>
+
+  <p><strong>MONDAY – FRIDAY</strong><br />
+
+    6:30AM - 6:30PM</p>
+
+  <p><strong>Creative Kids School</strong><br />
+
+123 Anywhere Street<br>
+
+City, State ZIP  </p>
+
+  <p>Phone: (555) 555-5555</p>
+
+  <p><a href="mailto:info@websitesfordaycares.com"><span class="ng-binding"><strong>info@websitesfordaycares.com</strong></span></a></p>
+
+  <div class="mapPnl">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111106.66655325773!2d-95.26004166704686!3d29.5139301968274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86408ff668e6975f%3A0x95ffb1cfe5ee6acc!2sFriendswood%2C+TX%2C+USA!5e0!3m2!1sen!2sin!4v1498214324704" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div></div>
+
+<div class="contactRht">
+
+<h2>Inquire / Schedule a Visit</h2>
+
+      <p style="color:#F00"></p>
+
+     <form id="inquiryform" action="https://websitesfordaycares.com/child-care-website-templates/creative-kids/script_contact.php" method="post" name="inquiryform" onsubmit="return validate_contact();">
+
+      <input type="hidden" value="1" name="enter">
+
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+          <tr>
+
+            <td width="57%" valign="top"><strong>
+
+              <label>
+
+                <input name="parentsname" type="text" id="parentsname" tabindex="1" value="Parent Name - First and Last" size="30" onblur="if(this.value=='') {this.value='Parent Name - First and Last'}" onfocus="if(this.value=='Parent Name - First and Last') {this.value=''}" />
+
+              </label>
+
+              </strong></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><strong>
+
+              <label>
+
+                <input name="parentsphone" type="text" id="parentsphone" tabindex="2" value="Parent Phone" size="30" onblur="if(this.value=='') {this.value='Parent Phone'}" onfocus="if(this.value=='Parent Phone') {this.value=''}" />
+
+              </label>
+
+              </strong></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><strong>
+
+              <label>
+
+                <input name="email" type="text" id="email" tabindex="3" value="Parent Email" size="30" onblur="if(this.value=='') {this.value='Parent Email'}" onfocus="if(this.value=='Parent Email') {this.value=''}" />
+
+              </label>
+
+              </strong></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><strong>
+
+              <input name="address_street" type="text" id="address_street" tabindex="4" value="Address" size="30" onblur="if(this.value=='') {this.value='Address'}" onfocus="if(this.value=='Address') {this.value=''}" />
+
+              </strong></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><strong>
+
+              <input name="city_zip" type="text" id="city_zip" tabindex="5" value="City, ZIP" size="30" onblur="if(this.value=='') {this.value='City, ZIP'}" onfocus="if(this.value=='City, ZIP') {this.value=''}" />
+
+              </strong></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><label>
+
+                <input name="childname" type="text" id="childname" tabindex="6" value="Child Name" size="30" onblur="if(this.value=='') {this.value='Child Name'}" onfocus="if(this.value=='Child Name') {this.value=''}" />
+
+              </label></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><label>
+
+                <input name="childbirthdate" type="text" id="childbirthdate" tabindex="7" value="Child Birthdate" size="30" onblur="if(this.value=='') {this.value='Child Birthdate'}" onfocus="if(this.value=='Child Birthdate') {this.value=''}" />
+
+              </label></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><label>
+
+                <select name="interestedin" id="interestedin" tabindex="8">
+
+                  <option>Please choose...</option>
+
+                  <option>Full-time</option>
+
+                  <option>Part-Time</option>
+
+                  <option>Drop-In</option>
+
+                </select>
+
+              </label></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><label>
+
+                <input name="start_date" type="text" id="start_date" tabindex="9" value="Anticipated Start Date" size="30" onblur="if(this.value=='') {this.value='Anticipated Start Date'}" onfocus="if(this.value=='Anticipated Start Date') {this.value=''}" />
+
+              </label></td>
+
+          </tr>
+
+          <tr>
+
+            <td valign="top"><strong>
+
+              <label>
+
+                <textarea name="comments" id="comments" cols="25" rows="5" tabindex="10" onblur="if(this.value=='') {this.value='Comments / Questions'}" onfocus="if(this.value=='Comments / Questions') {this.value=''}" >Comments / Questions</textarea>
+
+              </label>
+
+              </strong></td>
+
+          </tr>
+
+			
+
+           <tr> <td valign="top"><span style="text-align:left; width:90%">Please insert what you see in the image</span></td></tr>
+
+			
+
+          <tr> <td valign="top"><span><img src="captchaImage.png" alt="captcha image" class="capchaImg" style="margin:8px 10px 0 0; padding:0; border:none; float:left;" /></span><input type="text" id="captcha_input" name="captcha_input" placeholder="ENTER IMAGE TEXT" style="width:150px; float:left;" /></td></tr>
+
+			
+
+          <tr><td colspan="2" align="center" valign="top">
+
+            <label>
+
+				 <input name="Inquire_Now" type="submit" id="Inquire" tabindex="11" value="Inquire Now"/>
+
+              </label>
+
+				   <div class="errorBox"></div>
+
+			  </td>
+
+          </tr>
+
+        </table>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</div><!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<div class="sketchLine"></div>
+<div class="topFooterWrpr">
+    <div class="mainDiv footerTop">
+        <div class="row">
+            <div class="column locationCol">
+                <h4>Location</h4>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 123 Anywhere Street <br>City, State ZIP 123456 </p>
+            </div>
+            <div class="column openingHours">
+                <h4>Opening Hours</h4>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Monday - Friday <br>6:30AM - 6:30PM </p>
+            </div>
+            <div class="column">
+                <h4>Contact Us</h4>
+                <ul class="footerContactList">
+                    <li><a href="mailto:info@websitesfordaycares.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> info@websitesfordaycares.com</a></li>
+                    <li><a href="tel:(555) 555-5555"><i class="fa fa-phone" aria-hidden="true"></i> (555) 555-5555</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sketchLine"></div>
+<div class="footerPnl">
+    <div class="footerPnlInr">
+        <div class="mainDiv clearfix">
+            <div class="footerPnl_col stayCon">
+                <h4>Stay Connected</h4>
+                <ul class="ftrMnu">
+                    <li><a href="#"><img src="images/facebookIcon2.png" alt="">Follow us on Facebook</a></li>
+                    <li><a href="#" target="_blank"><img src="images/instragarmIcon2.png" alt="">Follow Instagram Feed</a></li>
+                </ul>
+            </div>
+            <div class="footerPnl_col quick_links">
+                <h4>Quick Links</h4>
+                <ul class="ftrMnu">
+                    <li><a href="index-2.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="staff.html">Our Staff</a></li>
+                    <li><a href="programs.html">Our Programs</a></li>
+                    <li><a href="curriculum.html">Curriculum</a></li>
+                    <li><a href="enrollment.html">Enrollment</a></li>
+                </ul>
+                <ul class="ftrMnu">
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="gallery.html">Photos</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footerPnl_col">
+                <h4>The Latest from Facebook</h4>
+                <p>Please like / follow to be kept updated with the latest from Creative Kids School.</p>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWebsitesForDaycares%2F&amp;tabs=timeline&amp;width=350&amp;height=300&amp;small_header=true&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=false&amp;appId=141058212630215" width="350" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="cprtPnl">&copy; <script>
+                document.write(new Date().getFullYear())
+                </script> Creative Kids School <a href="http://websitesfordaycares.com/" target="_blank">WebsitesForDaycares.com</a></div>
+        </div>
+    </div>
+</div><!-- #EndLibraryItem --><script>
+
+        function validate_contact(){
+
+        var error_contact=1;
+
+            if(document.inquiryform.parentsname.value ==""){
+
+                swal("Please enter parents name", "", "error");
+
+                document.inquiryform.parentsname.value="";
+
+                document.inquiryform.parentsname.focus();
+
+                return false;
+
+            }
+
+            if($.trim(document.inquiryform.parentsname.value) =="")
+
+            {
+
+                swal("Blank space not allowed. Please enter your name.", "", "error");
+
+                return false;
+
+            }
+
+            if(document.inquiryform.email.value ==""){
+
+                swal("Please enter parents email", "", "error");
+
+                document.inquiryform.email.value="";
+
+                document.inquiryform.email.focus();
+
+                return false;
+
+            }
+
+            if($.trim(document.inquiryform.email.value) !="")
+
+            {
+
+                var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+                if(!regex.test(document.inquiryform.email.value))
+
+                {
+
+                    swal("Please enter valid email.", "", "error");
+
+                    return false;
+
+                }
+
+            }
+
+            if(document.inquiryform.captcha_input.value ==""){
+
+                //alert("");
+
+                swal("Please insert what you see in the image", "", "error");
+
+                document.inquiryform.captcha_input.value="";
+
+                document.inquiryform.captcha_input.focus();
+
+                return false;
+
+            }
+
+            if($.trim(document.inquiryform.captcha_input.value) =="")
+
+            {
+
+                //alert("Blank space not allowed. Please Enter Image Text.");
+
+                swal("Blank space not allowed", "", "error");
+
+                return false;
+
+            }
+
+            else
+
+            {
+
+            $.ajax({
+
+                url:'captcha_text.php',
+
+                type:'post',
+
+                dataType:'json',
+
+                async:false,
+
+                data:{'captcha_input':document.inquiryform.captcha_input.value},
+
+                success:function(response)
+
+                {
+
+                if(response.status!=1)
+
+                {
+
+                    error_contact=1;
+
+                }
+
+                else
+
+                {
+
+                    error_contact=0;
+
+                }
+
+                },
+
+                beforeSend: function(){
+
+                 $("#Inquire").val('Sending..').prop('disabled', true);
+
+                },
+
+                complete: function(){
+
+                  $("#Inquire").val('Send').prop('disabled', false);
+
+                }
+
+            });
+
+            if(error_contact==1)
+
+            {
+
+                //alert("Entered captcha text not matched with image");
+
+                swal("Please enter the correct anti-spam code (case sensitive)", "", "error");
+
+                event.preventDefault();
+
+                return false;
+
+            }
+
+            }
+
+        }
+
+</script>
+
+	
+
+	</body>
+
+
+<!-- Mirrored from websitesfordaycares.com/child-care-website-templates/creative-kids/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 10:41:32 GMT -->
+</html>
+
